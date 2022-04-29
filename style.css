@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+body{
+    background: linear-gradient(150deg, rgb(239, 12, 12),rgb(48, 182, 212),rgb(232, 66, 216),rgb(239, 207, 20),rgb(238, 111, 26),rgb(39, 39, 224));
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(8, 6, 133);
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: rgb(40, 153, 214);
+}
+.todo-list:hover
+{
+    box-shadow: 0 0 10px black;
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(8, 6, 133);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+    background-color: lightgoldenrodyellow;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    letter-spacing: 1px;
+
+}
+.item.completed p{
+    text-decoration: line-through;
+    color: black;
+}
+.item-btn{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+.item-btn i {
+    color:red ;
+    font-size: 18px;
+    cursor: pointer;
+}
